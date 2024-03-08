@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	min-height: 100%;
+	background-image: url(../img/pexels-simon-berger-1323550.jpg);
+	background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, serif;
+    margin: 0
+}
+body{
+	min-height: 100%;
+}
+.content{
+	position: relative;
+	width: 500px;
+	margin: 50px auto;
+	font-size: 13px;
+	font-family: arial;
+	text-align: center;
+	font-weight: bolder;
+}
+.content_title{
+	margin: 0;
+	padding: 20px;
+	font-size: 70px;
+	font-family: Courier;
+	text-shadow: 0px 0px 5px black;
+	color: black;
+}
+.menu{
+	padding: 50px 0px;
+	margin: 0 auto;
+	position: relative;
+	background-color: rgba(94, 94, 94, 0.7);
+	width: 400px;
+	height: 300px;
+	border-radius: 250px;
+	transition: background-color 0.5s ease-in-out;
+}
+.menu:hover{
+	background: rgba(94, 94, 94, 0.9);
+}
+.menu li{
+	font-size: 40px;
+	font-family: Courier;
+	line-height: 66px;
+}
+.menu li a{
+	color: black;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 10px white;
+	letter-spacing: 1px;
+	transform: scale(0.8);
+	transition: all 0.4s linear;
+	text-decoration: none;
+	border-radius: 30px;
+}
+.menu:hover li a{
+	text-shadow: black;
+	color: black;
+}
+
+.menu li a:hover{
+	text-shadow: none;
+	color: black;
+	background: rgba(69, 68, 68, 0.8); 
+	transform: scale(1);
+}
+li{
+	list-style-type: none;
+}
+#panel1{
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 30px;
+	height: 40px;
+	background: grey;
+	color: black;
+	padding: 5px;
+	border-radius: 0px 5px 5px 0px;
+	transition-duration: 0.3s;
+}
+
+
+#hidden_pannel1{
+	position: fixed;
+	top: 100px;
+	left: -220px;
+	background: grey;
+	color: black;
+	font-size: 12px;
+	font-family: comic sans;
+	width: 200px;
+	height: 150px;
+	padding: 10px;
+	text-align: left;
+	border-radius: 0px 0px 5px 0px;
+	transition-duration: 0.3s;
+}
+
+#panel1:hover{
+	left: 220px;
+	z-index: 1;
+}
+
+#panel1:hover #hidden_pannel1{
+	left: 0;
+	overflow-y: auto;
+}
