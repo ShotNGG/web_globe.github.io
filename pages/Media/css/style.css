@@ -1,0 +1,67 @@
+.content{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding: 50px;
+    background: grey;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+
+}
+h1{
+	text-align: center;
+}
+.music{
+	display: inline-block;
+	width: 300px;
+	position: absolute;
+	top: 33%;
+	left: 58%;
+
+}
+audio{
+	padding: 20px
+}
+body{
+	background: url(../img/pexels-simon-berger-1323550.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, serif;
+    margin: 0;
+}
+.music2 {
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: 88%;
+    left: 58%;
+}
+.music3{
+	display: inline-block;
+	width: 300px;
+	position: absolute;
+	top: 144%;
+	left: 58%;
+}
+#goBack {
+    width: 150px;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin: 20px auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 18pt;
+    padding: 15px;
+}
+#goBack a {
+    text-decoration: none;
+    color: black;
+}
+#goBack:hover
+{
+    background-color: lightblue;
+}
